@@ -1,0 +1,13 @@
+﻿  源.cpp
+f:\documents\visual studio 2015\projects\start-opencv\start-opencv\源.cpp(9): warning C4101: “b”: 未引用的局部变量
+f:\documents\visual studio 2015\projects\start-opencv\start-opencv\源.cpp(9): warning C4101: “g”: 未引用的局部变量
+f:\documents\visual studio 2015\projects\start-opencv\start-opencv\源.cpp(9): warning C4101: “r”: 未引用的局部变量
+f:\documents\visual studio 2015\projects\start-opencv\start-opencv\源.cpp(89): error C2065: “IargF”: 未声明的标识符
+f:\documents\visual studio 2015\projects\start-opencv\start-opencv\源.cpp(101): error C2065: “IargF”: 未声明的标识符
+f:\documents\visual studio 2015\projects\start-opencv\start-opencv\源.cpp(105): warning C4305: “=”: 从“double”到“float”截断
+f:\documents\visual studio 2015\projects\start-opencv\start-opencv\源.cpp(126): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+f:\documents\visual studio 2015\projects\start-opencv\start-opencv\源.cpp(149): error C3861: “setHighThreshold”: 找不到标识符
+f:\documents\visual studio 2015\projects\start-opencv\start-opencv\源.cpp(150): error C3861: “setLowThreshold”: 找不到标识符
+f:\documents\visual studio 2015\projects\start-opencv\start-opencv\源.cpp(186): error C2146: 语法错误: 缺少“;”(在标识符“cvSplit”的前面)
+f:\documents\visual studio 2015\projects\start-opencv\start-opencv\源.cpp(201): error C2664: “void cvSubRS(const CvArr *,CvScalar,CvArr *,const CvArr *)”: 无法将参数 2 从“int”转换为“CvScalar”
+  f:\documents\visual studio 2015\projects\start-opencv\start-opencv\源.cpp(201): note: 无构造函数可以接受源类型，或构造函数重载决策不明确

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>f:\documents\visual studio 2015\projects\start-opencv\start-opencv\</FILEPATH>
+      <FILENAME>argv.cpp</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>返回值被忽略: “getchar”。</DESCRIPTION>
+    <FUNCTION>argv</FUNCTION>
+    <DECORATED>?argv@@YAHHPAPAD@Z</DECORATED>
+    <FUNCLINE>2</FUNCLINE>
+    <PATH />
+  </DEFECT>
+</DEFECTS>

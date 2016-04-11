@@ -1,0 +1,17 @@
+﻿  avi.cpp
+  cam_bg_model.cpp
+  difficult_transition.cpp
+  imshow.cpp
+  maintest.cpp
+  read_from_cam.cpp
+  roi_add.cpp
+  stdafx.cpp
+  test.cpp
+  trackslide.cpp
+  write_to_avi.cpp
+  正在生成代码
+  2 of 4 functions (50.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  start-opencv.vcxproj -> F:\Documents\Visual Studio 2015\Projects\start-opencv\Release\start-opencv.exe
