@@ -38,8 +38,8 @@ int main()
 	//不匹配template_match("F:\\Pictures\\相机\\IMG_20140814_090002.jpg","F:\\Pictures\\相机\\IMG_20140814_090015.jpg");
 	
 	
-	gesture_main();
-	
+	//gesture_main();
+	lucas_kanade();
 	//do_contour_2("E:\\视觉方向\\图像处理用图片\\Lena.bmp");
 	return 0;
 }

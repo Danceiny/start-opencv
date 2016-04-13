@@ -104,6 +104,7 @@
     <ClCompile Include="codebook_bg.cpp" />
     <ClCompile Include="contour.cpp" />
     <ClCompile Include="data_storage.cpp" />
+    <ClCompile Include="delaunay.cpp" />
     <ClCompile Include="difficult_transition.cpp" />
     <ClCompile Include="emd.cpp" />
     <ClCompile Include="find_circle.cpp" />
@@ -113,6 +114,7 @@
     <ClCompile Include="inpaiting.cpp" />
     <ClCompile Include="keystroke.cpp" />
     <ClCompile Include="log_polar.cpp" />
+    <ClCompile Include="lucas-kanade.cpp" />
     <ClCompile Include="mouse_callback.cpp" />
     <ClCompile Include="roi_add.cpp" />
     <ClCompile Include="seq.cpp" />

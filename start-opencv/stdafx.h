@@ -80,13 +80,10 @@ int do_contour_2(char* filename);
 
 
 
+int lucas_kanade();
 
 
-typedef struct code_book {
-	code_element **cb;
-	int numEntries;
-	int t;//count every access
-}codeBook;
+
 
 #define CHANNELS 3
 typedef struct ce {
@@ -97,4 +94,11 @@ typedef struct ce {
 	int t_last_update;//allow us to kill stale(¾ÉµÄ) entries
 	int stale;//max negative run (longest period of inactivity)
 }code_element;
+
+typedef struct code_book {
+	code_element **cb;
+	int numEntries;
+	int t;//count every access
+}codeBook;
+
 #endif // !_STDAFX_H

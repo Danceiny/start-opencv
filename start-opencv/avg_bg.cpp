@@ -41,6 +41,7 @@ int line_segment(char* filename,CvPoint pt1,CvPoint pt2) {
 
 	fclose(fptrb); fclose(fptrg); fclose(fptrr);
 	cvReleaseCapture(&capture);
+	return 0;
 }
 
 
@@ -79,6 +80,26 @@ IplImage *Imaskt;
 // counts number of images learned for averaging later.
 float Icount;
 
+void setHighThreshold(float scale) {
+	//基于每一帧图像平均绝对差设置阈值的有效函数
+	//使得对于每一帧图像的绝对差大于平均值scale倍的像素都认为是前景
+	cvConvertScale(IdiffF, Iscratch, scale);
+	cvAdd(Iscratch, IavgF, IhiF);
+	cvSplit(IhiF, Ihi1, Ihi2, Ihi3, 0);
+
+}
+void setLowThreshold(float scale) {
+	//基于每一帧图像平均绝对差设置阈值的有效函数
+	//使得对于每一帧图像的绝对差小于平均值scale倍的像素都认为是背景
+	cvConvertScale(IdiffF, Iscratch, scale);
+	cvSub(IavgF, Iscratch, IlowF);
+	cvSplit(IlowF, Ilow1, Ilow2, Ilow3, 0);
+}
+
+/*使用上面这两个函数时，用cvConvertScale()乘以预先设定的值来增加或减小与IavgF相关的范围。
+操作通过函数cvSplit()为图像的每个通道设置IhiF和IlowF的范围。*/
+
+
 //接下来，我们创建一个函数来给需要的所有临时图像分配内存。方便起见，传递一幅图像（来自视频）作为大小参考来分配临时图像
 
 // I is just a sample image for allocation  
@@ -98,7 +119,7 @@ void AllocateImages(IplImage* I) {
 	Ihi2 = cvCreateImage(sz, IPL_DEPTH_32F, 1);
 	Ihi3 = cvCreateImage(sz, IPL_DEPTH_32F, 1);
 
-	cvZero(IargF);
+	cvZero(IavgF);
 	cvZero(IdiffF);
 	cvZero(IprevF);
 	cvZero(IlowF);
@@ -154,24 +175,7 @@ void createModelFromStats() {
 确保平均差分图像的最小值为1。
 当计算前景和背景阈值以及避免前景阈值和背景阈值相等而出现的退化情况时，我们要缩放这个因素。*/
 
-void setHighThreshold(float scale) {
-	//基于每一帧图像平均绝对差设置阈值的有效函数
-	//使得对于每一帧图像的绝对差大于平均值scale倍的像素都认为是前景
-	cvConvertScale(IdiffF, Iscratch, scale);
-	cvAdd(Iscratch, IavgF, IhiF);
-	cvSplit(IhiF, Ihi1, Ihi2, Ihi3, 0);
 
-}
-void setLowThreshold(float scale) {
-	//基于每一帧图像平均绝对差设置阈值的有效函数
-	//使得对于每一帧图像的绝对差小于平均值scale倍的像素都认为是背景
-	cvConvertScale(IdiffF, Iscratch, scale);
-	cvSub(IavgF, Iscratch, IlowF);
-	cvSplit(IlowF, Ilow1, Ilow2, Ilow3, 0);
-}
-
-/*使用上面这两个函数时，用cvConvertScale()乘以预先设定的值来增加或减小与IavgF相关的范围。
-操作通过函数cvSplit()为图像的每个通道设置IhiF和IlowF的范围。*/
 
 //图像分割通过调用下面的函数完成
 // create a binary: 0,255 mask where 255 means foreground pixels
