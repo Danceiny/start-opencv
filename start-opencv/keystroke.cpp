@@ -24,6 +24,8 @@
 			ks.ki.wVk = VK_PRIOR;
 			ks.ki.dwFlags = KEYEVENTF_KEYUP;
 			SendInput(1, &ks, sizeof(INPUT));
+
+			//imshow(1, "1.jpg");
 		}
 
 		if (strcmp(rec, "gd") == 0)
