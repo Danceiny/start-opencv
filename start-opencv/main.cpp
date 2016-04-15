@@ -41,6 +41,8 @@ int main()
 	//gesture_main();
 	//lucas_kanade();
 	//do_contour_2("E:\\视觉方向\\图像处理用图片\\Lena.bmp");
-	kalman();
+	//kalman();
+	nihe_2d();
+	//calib(3, 3, 1);
 	return 0;
 }
