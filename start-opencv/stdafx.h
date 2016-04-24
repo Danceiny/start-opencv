@@ -77,12 +77,12 @@ int gesture_main(/*nt argc, char** argv*/);
 void on_trackbar_contour(int);
 int do_contour(char* filename);
 int do_contour_2(char* filename);
-
+int birds_eys(int board_w, int board_h,/*CvMat* intr,CvMat* dist,*/char* intri, char* dist, char* img);
 
 
 int lucas_kanade();
 
-
+int nihe_2d();
 
 
 #define CHANNELS 3

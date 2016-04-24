@@ -100,6 +100,7 @@
   <ItemGroup>
     <ClCompile Include="argv.cpp" />
     <ClCompile Include="avi.cpp" />
+    <ClCompile Include="birds_eye.cpp" />
     <ClCompile Include="cam_bg_model.cpp" />
     <ClCompile Include="codebook_bg.cpp" />
     <ClCompile Include="contour.cpp" />
@@ -112,15 +113,17 @@
     <ClCompile Include="histogram.cpp" />
     <ClCompile Include="imshow.cpp" />
     <ClCompile Include="inpaiting.cpp" />
+    <ClCompile Include="kalman.cpp" />
     <ClCompile Include="keystroke.cpp" />
     <ClCompile Include="log_polar.cpp" />
     <ClCompile Include="lucas-kanade.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="mouse_callback.cpp" />
+    <ClCompile Include="nihe_2d.cpp" />
     <ClCompile Include="roi_add.cpp" />
     <ClCompile Include="seq.cpp" />
     <ClCompile Include="speedy_conv.cpp" />
     <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="maintest.cpp" />
     <ClCompile Include="read_from_cam.cpp" />
     <ClCompile Include="switch.cpp" />
     <ClCompile Include="template_match.cpp" />

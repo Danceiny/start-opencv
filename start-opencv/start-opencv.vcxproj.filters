@@ -47,9 +47,6 @@
     <ClCompile Include="write_to_avi.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="maintest.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -132,6 +129,18 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="lucas-kanade.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="birds_eye.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="kalman.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="nihe_2d.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
