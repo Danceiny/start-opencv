@@ -11,7 +11,7 @@
 #include <Windows.h>
 //#include <WinUser.h>
 
-/*include"difficult_transition.cpp"
+/*include "difficult_transition.cpp"
 #include"write_to_avi.cpp"
 #include"read_from_cam.cpp"*/
 
@@ -84,6 +84,9 @@ int lucas_kanade();
 
 int nihe_2d();
 
+void detect_and_draw(
+	IplImage* img,
+	double scale=1.3);
 
 #define CHANNELS 3
 typedef struct ce {

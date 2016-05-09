@@ -42,7 +42,13 @@ int main()
 	//lucas_kanade();
 	//do_contour_2("E:\\视觉方向\\图像处理用图片\\Lena.bmp");
 	//kalman();
-	nihe_2d();
+	//nihe_2d();
 	//calib(3, 3, 1);
+
+
+
+	IplImage* face;
+	face = cvLoadImage("F:\\Pictures\\xiaoping.png");
+	detect_and_draw(face,1.3);
 	return 0;
 }

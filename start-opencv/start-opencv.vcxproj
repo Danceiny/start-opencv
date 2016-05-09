@@ -108,6 +108,7 @@
     <ClCompile Include="delaunay.cpp" />
     <ClCompile Include="difficult_transition.cpp" />
     <ClCompile Include="emd.cpp" />
+    <ClCompile Include="face.cpp" />
     <ClCompile Include="find_circle.cpp" />
     <ClCompile Include="gesture_main.cpp" />
     <ClCompile Include="histogram.cpp" />
